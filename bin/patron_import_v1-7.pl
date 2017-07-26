@@ -100,8 +100,8 @@ sub environment {
 			$PATRON_SOURCE_UPDATES_DIR      ="$PATRON_HOME_DIR/$PATRON_SOURCE_BASE_DIR/mods";
 			$PATRON_PROBLEMS_DIR            ="$PATRON_HOME_DIR/$PATRON_SOURCE_BASE_DIR/problems";
 			$PATRON_ARCHIVE_DIR             ="$PATRON_HOME_DIR/$PATRON_SOURCE_BASE_DIR/Archives";
-			$OLE_PATRON_POLLING_DIR         ='/usr/local/ole15/kuali/main/prd/olefs-webapp/patrons/pending';      # Specific to james.lis.soas.ac.uk
-			#$OLE_PATRON_POLLING_DIR	='/home/ole15/kuali/main/qa_william/olefs-webapp/patrons/pending/'; # Specific to william.lis.soas.ac.uk
+			#$OLE_PATRON_POLLING_DIR         ='/usr/local/ole15/kuali/main/prd/olefs-webapp/patrons/pending';      # Specific to james.lis.soas.ac.uk
+			$OLE_PATRON_POLLING_DIR	='/home/ole15/kuali/main/qa_william/olefs-webapp/patrons/pending/'; # Specific to william.lis.soas.ac.uk
 			#$OLE_PATRON_POLLING_DIR	='/usr/local/ole15/kuali/main/dev_lisbet/olefs-webapp/patrons/pending/' # Specific to lisbet.lis.soas.ac.uk
 			$OLE_PATRON_SCHEMA              ="/home/ole_B2017/olePatronRecord.xsd";
 			$LOG_DIR                        ='/home/ole_B2017/logs';                                                      # Think of better home for these
