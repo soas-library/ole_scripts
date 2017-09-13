@@ -47,7 +47,7 @@
             <xs:element name="patronLevelPolicies" type="patronLevelPolicies" minOccurs="1" maxOccurs="1"/>
             <xs:element name="notes" type="notes" minOccurs="1" maxOccurs="1"/>
             <xs:element name="localIdentifications" type="localIdentifications" minOccurs="0" maxOccurs="1"/>
-			        </xs:sequence>
+        </xs:sequence>
     </xs:complexType>
     <!-- Name -->
     <xs:complexType name="name">
@@ -94,7 +94,7 @@
         <xs:annotation>
             <xs:documentation>
                 One address line is required; the rest is optional. Some systems can only put address data in address lines 1-4, without populating the city, state, postal, country fields. Non-USA addresses sometimes don't have state and/or postal code, so none of these are required except for the first address line.
-			</xs:documentation>
+            </xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element name="postalAddressType" type="xs:string" minOccurs="1" maxOccurs="1"/>
@@ -141,7 +141,7 @@
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="telephoneNumbers">
-	        <xs:sequence>
+        <xs:sequence>
             <xs:element name="telephoneNumber" type="telephoneNumber" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>

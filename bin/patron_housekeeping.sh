@@ -8,7 +8,7 @@
 # @purpose:
 # This script removes old patron import files from /mnt/BLMS/Live_User_Import/Archives/
 # Agreed time period is 46 days - script to be scheduled on 15th of each month
-
+#
 patron_xml_archive_dir=/mnt/BLMS/Live_User_Import/Archives/
 
 #Be sure to express days as '+No of Days' omitting the + or including a - could be painful ;-)

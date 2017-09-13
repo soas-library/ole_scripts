@@ -24,8 +24,8 @@ use File::Find;
 
 #my $MODE               = 'TEST';
 my $MODE                = 'LIVE';
-#my $PATRON_ROOT         = '/usr/local/ole15/kuali/main/prd/olefs-webapp/patrons/pending/'; # Specific to james.lis.soas.ac.uk
-my $PATRON_ROOT = "/home/ole15/kuali/main/qa_william/olefs-webapp/patrons/pending/"; # Specific to william.lis.soas.ac.uk
+my $PATRON_ROOT         = '/usr/local/ole15/kuali/main/prd/olefs-webapp/patrons/pending/'; # Specific to james.lis.soas.ac.uk
+#my $PATRON_ROOT = "/home/ole15/kuali/main/qa_william/olefs-webapp/patrons/pending/"; # Specific to william.lis.soas.ac.uk
 #my $PATRON_ROOT = "/usr/local/ole15/kuali/main/dev_lisbet/olefs-webapp/patrons/pending/"; # Specific to lisbet.lis.soas.ac.uk
 my $LOG_DIR             = '/home/ole_B2017/logs';
 my $program_id          = $0;
