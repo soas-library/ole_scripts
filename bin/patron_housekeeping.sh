@@ -15,7 +15,7 @@ patron_xml_archive_dir=/mnt/BLMS/Live_User_Import/Archives/
 DAYS='+77'
 DAYS_ELAPSED=$(date --date=-2days +'%Y%m%d')
 DATE=$(date +'%Y%m%d')
-EMAIL='ft9@soas.ac.uk library.systems@soas.ac.uk'
+EMAIL='ft9@soas.ac.uk library.systems@soas.ac.uk csbs@soas.ac.uk'
 HOST=$(hostname -s)
 timestamp() {
   date +"%Y/%m/%d %H:%M:%S"
