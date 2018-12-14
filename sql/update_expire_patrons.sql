@@ -1,0 +1,9 @@
+UPDATE 
+	ole.ole_ptrn_t 
+SET 
+	ACTV_IND='N'
+WHERE 
+	ACTV_IND='Y' 
+	AND 
+	OLE_PTRN_ID=?
+;
