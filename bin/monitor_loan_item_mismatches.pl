@@ -74,6 +74,9 @@ sub check_for_mismatches {
 	# 	# Begin subroutine to send report of mismatches
 	# 	report_mismatches (@barcodes);
 	# }
+	
+	my $count = 0;
+	
 	while (my @row = $query->fetchrow_array) {
 		$barcode = "$row[1]\n";
 		push @barcodes, $barcode;
@@ -89,11 +92,15 @@ sub check_for_mismatches {
 		}
 
 		close $fh;
+		
+		$count++;
 	}
 	
-	# Begin subroutine to send report of mismatches
-	report_mismatches (@barcodes);
-
+	if ($count){
+		# Begin subroutine to send report of mismatches
+		report_mismatches (@barcodes);
+	}
+	
 	$myConnection->disconnect;
 }
 
