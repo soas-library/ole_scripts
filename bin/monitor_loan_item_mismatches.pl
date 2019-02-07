@@ -1,10 +1,11 @@
 #!/usr/bin/perl -w
 # @name: monitor_loan_item_mismatches.pl
-# @version: 0.2
+# @version: 2.0
 # @creation_date: 2018-01-29
 # @edit_date: 2018-08-20
+# @edit_date: 2019-02-07
 # @license: GNU General Public License version 3 (GPLv3) <https://www.gnu.org/licenses/gpl-3.0.en.html>
-# @author: Simon Barron <sb174@soas.ac.uk>
+# @author: Simon Bowie <sb174@soas.ac.uk>
 #
 # @purpose: Check for mismatches between the ole.ole_ds_item_t table and the ole.ole_dlvr_loan_t database tables and send an email when a mismatch is detected. 
 #
