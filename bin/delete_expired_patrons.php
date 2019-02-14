@@ -1,9 +1,9 @@
 <?php
 # @name: delete_expired_patrons.php
-# @version: 0.1
+# @version: 0.2
 # @creation_date: 2018-05-08
 # @license: GNU General Public License version 3 (GPLv3) <https://www.gnu.org/licenses/gpl-3.0.en.html>
-# @author: Simon Barron <sb174@soas.ac.uk>
+# @author: Simon Bowie <sb174@soas.ac.uk>
 #
 # @purpose: 
 # This script deletes patrons in OLE who expired over 4 years ago: it removes any personal detail that could be used to uniquely identify the individual.
@@ -16,7 +16,7 @@ $username = "xxxxxxxx";
 $password = "xxxxxxxx";
 $dbname = "ole";
 $run_date = date("Y-m-d H:i:s");
-$expiration_date = "2014-06-01 00:00:00";
+$expiration_date = date("Y-m-d H:i:s", strtotime('-4 year'));
 
 $output_report = '/home/ole_B2017/bin/delete_expired_patrons.txt';
 $log_dir = "/home/ole_B2017/bin/logs/";
