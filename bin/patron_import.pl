@@ -106,7 +106,7 @@ sub environment {
 			$LOG_DIR                        ='/home/ole_B2017/logs';
 			$EMAIL_ADDRESS                  ='sb174@soas.ac.uk';
 			$PATRON_SOURCE_DELETIONS_DIR 	= "$PATRON_HOME_DIR/$PATRON_SOURCE_BASE_DIR/dels";
-			$PATRON_SOURCE_DELETIONS_ARCHIVE_DIR = "$PATRON_SOURCE_DELETIONS_DIR/deletions_archive";
+			$PATRON_SOURCE_DELETIONS_ARCHIVE_DIR = "$PATRON_HOME_DIR/$PATRON_SOURCE_BASE_DIR/Archives/dels_archive";
 			$deletion_files                 = "$PATRON_SOURCE_DELETIONS_DIR/del-*.txt";
 			$sql_file_update                = '/home/ole_B2017/sql/update_expire_patrons.sql';
 			$data_source                    = q/DBI:mysql:ole/;
@@ -125,7 +125,7 @@ sub environment {
 			$LOG_DIR                        ='/home/ole_B2017/logs'; # Think of better home for these
 			$EMAIL_ADDRESS                  ='library.systems@soas.ac.uk md11@soas.ac.uk as126@soas.ac.uk bj1@soas.ac.uk ft9@soas.ac.uk ap87@soas.ac.uk sb174@soas.ac.uk';
 			$PATRON_SOURCE_DELETIONS_DIR 	= "$PATRON_HOME_DIR/$PATRON_SOURCE_BASE_DIR/dels";
-			$PATRON_SOURCE_DELETIONS_ARCHIVE_DIR = "$PATRON_SOURCE_DELETIONS_DIR/Archive";
+			$PATRON_SOURCE_DELETIONS_ARCHIVE_DIR = "$PATRON_HOME_DIR/$PATRON_SOURCE_BASE_DIR/Archives/dels_archive";
 			$deletion_files                 = "$PATRON_SOURCE_DELETIONS_DIR/del-*.txt";
 			$sql_file_update                = '/home/ole_B2017/sql/update_expire_patrons.sql';
 			$data_source                    = q/DBI:mysql:ole/;
@@ -312,6 +312,8 @@ sub process_deletion_files
 			my $result = run_patron_deletions_sql($patron_id);
 			
 			if ($result eq 'Successfully updated') {
+				$message = $result;
+				log_message;
 				move_deletion_files($file);
 			}
 			else {
