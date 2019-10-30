@@ -31,7 +31,7 @@ my $LOG_DIR             = '/home/ole_B2017/logs';
 my $program_id          = $0;
 my $program_log         = "$LOG_DIR/patron_poller_status.log";
 my $POLLER_REPORT       = '/home/ole_B2017/patron_poller_status_report.html';
-my $email_address       = 'library.systems@soas.ac.uk ap87@soas.ac.uk sb174@soas.ac.uk csbs@soas.ac.uk';
+my $email_address       = 'sb174@soas.ac.uk ap87@soas.ac.uk gm43@soas.ac.uk em32@soas.ac.uk';
 ##my $email_address     = $MODE eq 'TEST' ? 'library.systems@soas.ac.uk';
 ##my $email_address     = $MODE eq 'TEST' ? 'tg3@soas.ac.uk' : 'library.systems@soas.ac.uk tg3@soas.ac.uk';
 

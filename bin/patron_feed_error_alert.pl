@@ -36,7 +36,7 @@ my $program_id          = "patron_feed_error_alert_V1-1.pl";
 my $program_log         = "$LOG_DIR/patron_poller_import_errors.log";
 my $ERROR_REPORT        = '/home/ole_B2017/patron_error_report.txt';
 
-my $email_address       = $MODE eq 'TEST' ? 'ft9@soas.ac.uk' : 'library.systems@soas.ac.uk as126@soas.ac.uk ap87@soas.ac.uk sb174@soas.ac.uk md11@soas.ac.uk csbs@soas.ac.uk';
+my $email_address       = $MODE eq 'TEST' ? 'systems@soas.ac.uk' : 'md11@soas.ac.uk sb174@soas.ac.uk ap87@soas.ac.uk gm43@soas.ac.uk em32@soas.ac.uk';
 
 
 my @file_list;
